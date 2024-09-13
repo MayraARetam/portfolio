@@ -11,7 +11,7 @@ html{
     scroll-behavior: smooth;
 }
 .contenedor-header{
-    background: #4C3F54;
+    background: #BAA896;
     position: fixed;
     width: 100%;
     top: 0;
@@ -32,7 +32,7 @@ html{
 .contenedor-header header .logo a{
     font-family: 'tahoma';
     font-size: 36px;
-    color: #D13525;
+    color: #e38b75;
     text-decoration: none;
 
 }
@@ -45,7 +45,7 @@ html{
 
 .contenedor-header header nav ul li a{
     text-align: none;
-    color: #F2C057;
+    color: #D13525;
     margin: 0 15px;
     padding: 3px;
     transition: .5s;
@@ -53,15 +53,160 @@ html{
 }
 
 .contenedor-header header nav ul li a:hover{
-    color: #D13525;
+    color: #e38b75;
 }
 
 .nav-responsive{
-    background-color: #D13525;
-    color: #F2C057;
+    background-color: #e38b75;
+    color: #E6CCB5;
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
     display: none;
+
+}
+.inicio{
+    background: linear-gradient(to top, rgba(230, 138, 78, 0.8), rgba(93,80,112,1)),
+     url("imagenes/devweb.png");
+    background-size: cover;
+    height: 100vh;
+    color: #E6CCB5;
+    display: flex;
+    align-items: center;
     
+
+
+}
+
+.inicio .contenido-banner{
+    padding: 10px;
+    background-color: #413546;
+    max-width: 250px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.inicio .contenido-banner img{
+    margin-top: 90px;
+    border: 5px solid #e38b75;
+    display: block;
+    width: 60%;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.inicio .contenido-banner h1{
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: 'Work Sans';
+}
+
+.inicio .contenido-banner h2{
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.inicio .contenido-banner .redes a{
+    color: #F2C057;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #F2C057;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.inicio .contenido-banner .redes a:hover{
+    background-color: #D13525;
+}
+
+.sobre-mi{
+    background-color: #BAA896;
+    color: #E6CCB5;
+    padding: 50px 20px;
+
+}
+
+.sobre-mi .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+
+}
+
+.sobre-mi h2{
+    font-size: 48px;
+    font-family: 'Work Sans';
+    text-align: center;
+    padding: 20px 0;
+    color: #D13525;
+
+}
+
+.sobre-mi .contenido-seccion p{
+    font: 18px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    color: #D13525;
+}
+
+.sobre-mi .contenido-seccion p span{
+    color: #D13525;
+    font-weight: bold;
+}
+
+.sobre-mi .fila{
+    display: flex;
+
+}
+
+.sobre-mi .fila .col h3{
+    font-size: 28px;
+    color: #D13525;
+    font-family: 'work sans';
+    margin-bottom: 25px;
+
+}
+
+.sobre-mi .fila .col ul{
+    list-style: none;
+    color: #D13525;
+}
+
+.sobre-mi .fila .col ul li{
+    margin: 12px 0;
+}
+
+.sobre-mi button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #D13525;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #D13525;
+    position: relative;
+    z-index: 10;
+}
+
+.sobre-mi button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #413546;
+    z-index: -1;
+    transition: 1s;
+}
+
+.sobre-mi button:hover .overlay{
+    width: 100%;
+
 }
