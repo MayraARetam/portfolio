@@ -210,3 +210,46 @@ html{
     width: 100%;
 
 }
+
+/*seccion skills*/
+.skills h3{
+    padding: 110px 10px;
+    background-color: #BAA896;
+    color: #D13525;
+    font-size: 48px;
+    text-align: center;
+}
+.skills .fila{
+    background-color: #BAA896;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px;
+    justify-content: center;
+
+}
+
+.skills .fila .item{
+    padding: 70px 10px;
+    justify-content: center;
+}
+
+.skills .fila .item .contenedor-icono{
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 10px auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #D13525;
+    border: 1px solid #D13525;
+    position: relative;
+    transition: .3s;
+    bottom: 0;
+    cursor: pointer;
+
+}
+
+.skills .fila .item .contenedor-icono:hover{
+    bottom: 20px;
+}
