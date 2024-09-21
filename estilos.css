@@ -29,14 +29,6 @@ html{
 
 }
 
-.contenedor-header header .logo a{
-    font-family: 'tahoma';
-    font-size: 36px;
-    color: #e38b75;
-    text-decoration: none;
-
-}
-
 .contenedor-header header ul{
     display: flex;
     list-style: none;
@@ -57,6 +49,7 @@ html{
 }
 
 .nav-responsive{
+    margin-left: auto;
     background-color: #e38b75;
     color: #E6CCB5;
     padding: 5px 10px;
@@ -252,4 +245,116 @@ html{
 
 .skills .fila .item .contenedor-icono:hover{
     bottom: 20px;
+}
+
+.formacion{
+    background-color: #9c8e7f;
+    color:#D13525;
+    padding: 50px 20px;
+}
+
+.formacion .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.formacion h2{
+    font-size: 48px;
+    font-family: 'work sans';
+    text-align: center;
+    padding: 20px 0;
+}
+.formacion .fila{
+    display: flex;
+    justify-content: space-between;
+}
+.formacion .fila .col{
+    width: 49%;
+    padding: 0 20px;
+}
+
+.formacion .fila .item{
+  padding: 25px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.formacion .fila .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.formacion .fila .item .casa{
+    color: #D13525;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+
+.formacion .fila .item .fecha{
+    display: block;
+    color: #D13525;
+    margin-bottom: 10px;
+}
+footer{
+    background-color: #413546;
+    color: #9c8e7f;
+    padding: 50px 0 30px 0;
+    position: relative;
+    width: 100%;
+}
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    color: #D13525;
+    position: absolute;
+    left: 50%;
+    top: -35px;
+    line-height: 50px;
+    font-size: 30px;
+}
+
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #9c8e7f;
+        width: 180px;
+
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #F2C057;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width:700px){
+    .sobre-mi .fila{
+        display: block;
+    }
+    .sobre-mi .fila .col{
+        width: fit-content;
+    }
+    .skills .fila{
+        display: block;
+    }
+    .skills .fila .item{
+        width: 100%;
+    }
+    .formacion .fila{
+        display: block;
+    }
+    .formacion .fila .col{
+        width: 90%;
+    }
 }

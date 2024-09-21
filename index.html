@@ -13,14 +13,14 @@
         <header>
             <nav id="nav">
                 <ul>
-                    <li><a href="#inicio">INICIO</a></li>
-                    <li><a href="#sobre-mi">SOBRE MÍ</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#curriculum">CURRÍCULUM</a></li>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobre-mi" onclick="seleccionar()">SOBRE MÍ</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#formacion" onclick="seleccionar()">FORMACIÓN</a></li>
                     
                 </ul>
             </nav>
-            <div class="nav-responsive">
+            <div class="nav-responsive" onclick="mostrarOcultar()">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </header>
@@ -65,7 +65,9 @@
             </div>
             <button>
                 Descargar CV <i class="fa-solid fa-download"></i>
+                <a href="pdf/cv Mayra Retamar.pdf" download="cvMayraRetamar.pdf">
                 <span class="overlay"></span>
+                </a>
             </button>
         </div>
      </section>
@@ -126,8 +128,34 @@
     
      </section>
      <!--seccion curriculum-->
-     <section id="curriculum" class="curriculum">
-        
+     <section id="formacion" class="formacion">
+        <div class="contenido-seccion">
+            <h2>Educación</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <div class="item izq">
+                        <h4>Programador FullStack</h4>
+                        <span class="casa">Escuela municipal de IT</span>
+                        <span class="fecha">Marzo 2022- Diciembre 2023</span>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <div class="item der">
+                        <h4>Bachiller con orientación en Ciencias Sociales</h4>
+                        <span class="casa">Escuela secundaria San Felipe</span>
+                        <span class="fecha">Marzo 2007- Diciembre 2009</span>
+                    </div>
+                </div>
+            </div>
+        </div>
      </section>
+     <!--FOOTER-->
+     <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+     </footer>
+
+     <script src="archivo.js"></script>
 </body>
 </html>
